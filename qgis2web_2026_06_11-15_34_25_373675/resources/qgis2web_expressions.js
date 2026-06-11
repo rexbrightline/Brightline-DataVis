@@ -767,32 +767,6 @@ function fnc_project_color(values, context) {
 
 
 function exp_CES5MTCSolution_5rule0_eval_expression(context) {
-    // pollutnP > 75
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('pollutnP')  > 75);
-    } else {
-        return (feature.get('pollutnP')  > 75);
-    }
-}
-
-
-function exp_CES5MTCSolution_5rule1_eval_expression(context) {
-    // PopCharP > 75
-
-    var feature = context.feature;
-    
-    if (feature.properties) {
-        return (feature.get('PopCharP')  > 75);
-    } else {
-        return (feature.get('PopCharP')  > 75);
-    }
-}
-
-
-function exp_CES5MTCSolution_5rule2_eval_expression(context) {
     // CIscoreP > 75
 
     var feature = context.feature;
@@ -801,5 +775,31 @@ function exp_CES5MTCSolution_5rule2_eval_expression(context) {
         return (feature.get('CIscoreP')  > 75);
     } else {
         return (feature.get('CIscoreP')  > 75);
+    }
+}
+
+
+function exp_CES5MTCSolution_5rule1_eval_expression(context) {
+    // pollutnP > 75 AND CIscoreP < 75
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ((feature.get('pollutnP')  > 75) && (feature.get('CIscoreP')  < 75));
+    } else {
+        return ((feature.get('pollutnP')  > 75) && (feature.get('CIscoreP')  < 75));
+    }
+}
+
+
+function exp_CES5MTCSolution_5rule2_eval_expression(context) {
+    // PopCharP > 75 AND CIscoreP < 75
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ((feature.get('PopCharP')  > 75) && (feature.get('CIscoreP')  < 75));
+    } else {
+        return ((feature.get('PopCharP')  > 75) && (feature.get('CIscoreP')  < 75));
     }
 }

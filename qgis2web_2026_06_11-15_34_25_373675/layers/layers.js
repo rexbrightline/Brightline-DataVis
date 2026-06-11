@@ -85,9 +85,9 @@ var lyr_CES5MTCSolution_5 = new ol.layer.Vector({
                 popuplayertitle: 'CES 5 MTC Solution',
                 interactive: true,
     title: 'CES 5 MTC Solution<br />\
-    <img src="styles/legend/CES5MTCSolution_5_0.png" /> Pollution Burden<br />\
-    <img src="styles/legend/CES5MTCSolution_5_1.png" /> Population Burden<br />\
-    <img src="styles/legend/CES5MTCSolution_5_2.png" /> CES 5<br />' });
+    <img src="styles/legend/CES5MTCSolution_5_0.png" /> CES 5<br />\
+    <img src="styles/legend/CES5MTCSolution_5_1.png" /> Pollution Burden<br />\
+    <img src="styles/legend/CES5MTCSolution_5_2.png" /> Population Burden<br />' });
 var format_CES5DACs_6 = new ol.format.GeoJSON();
 var features_CES5DACs_6 = format_CES5DACs_6.readFeatures(json_CES5DACs_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
